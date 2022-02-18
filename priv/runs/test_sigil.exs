@@ -32,6 +32,10 @@ defmodule Test do
     ~l"#{m}"ewb
     ~l"#{m}"iwb
     ~l"#{m}"wwb
+    ~l"""
+      sasklkflds
+      #{__MODULE__}
+    """drw
   end
 end
 Test.test()
