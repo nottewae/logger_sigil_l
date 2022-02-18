@@ -78,9 +78,7 @@ defmodule LoggerSigilL do
       defp find_key(_list, nil, _default), do: nil
       defp find_key(list, key, default) when is_binary(key), do: find_key(list, String.to_atom(key), default)
       defp find_key(list, key, default), do: (if is_nil(Enum.find(list, fn {k,_} -> key == k end)), do: list[default], else: list[key])
-      def log_(message, nil, nil) do
-        Logger.debug(message)
-      end
+      def log_(message, nil, nil), do: Logger.debug(message)
     end
     funs = ~w(debug info warn error)
     outs = Enum.map(funs, fn(fun) ->
