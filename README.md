@@ -9,7 +9,7 @@ Add `logger_sigil_l` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:logger_sigil_l, git: "git@github.com/nottewae/logger_sigil_l.git"}
+    {:logger_sigil_l, git: "git@github.com:nottewae/logger_sigil_l.git"}
   ]
 end
 ```
