@@ -13,6 +13,25 @@ def deps do
   ]
 end
 ```
+## Use 
+```~l"your text here"<<<m>t>b>``` 
+```elixir
+~l"text" #default for Logger.debug
+~l"text"i #default gor Logger.info
+~l"text"wr # Logger.warn with red text
+~l"text"iry # Logger.info with red text and yellow background
+```
+- **m** - Logger method ```i``` - info, ```d``` - debug, ```e``` - error, ```w``` - warn
+- **t** - text color 
+  - r - red
+  - b - blue
+  - g - green 
+  - w - white
+  - m - magenta
+  - c - cyan
+  - d - black 
+  - y - yellow
+- **b** - background color - as text color
 ## Examples
 ```elixir
 #in our module
