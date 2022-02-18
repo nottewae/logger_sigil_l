@@ -9,7 +9,7 @@ Add `logger_sigil_l` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:logger_sigil_l,"~> 0.1.0"}
+    {:logger_sigil_l,"~> 0.1.1"}
   ]
 end
 ```

@@ -1,5 +1,75 @@
 defmodule LoggerSigilL do
+  @moduledoc """
+    # LoggerSigilL
+    ```LoggerSigilL``` provides a short syntax for logging while debugging an application, like ```~w(a b c)```
+    ## Installation
+    Add `logger_sigil_l` to your list of dependencies in `mix.exs`:
 
+    ```elixir
+    def deps do
+      [
+        {:logger_sigil_l,"~> 0.1.1"}
+      ]
+    end
+    ```
+    ## Use
+    ```~l"your text here"<<<m>t>b>```
+    ```elixir
+    ~l"text" #default for Logger.debug
+    ~l"text"i #default for Logger.info
+    ~l"text"wr # Logger.warn with red text
+    ~l"text"iry # Logger.info with red text and yellow background
+    ```
+    - **m** - Logger method ```i``` - info, ```d``` - debug, ```e``` - error, ```w``` - warn
+    - **t** - text color
+      - r - red
+      - b - blue
+      - g - green
+      - w - white
+      - m - magenta
+      - c - cyan
+      - d - black
+      - y - yellow
+    - **b** - background color - as text color
+    ## Examples
+    ```elixir
+    #in our module
+    use LoggerSigilL
+    def test_logger do
+      m = "test message"
+        ~l"test message"
+        ~l"test message"dr
+        ~l"test message"er
+        ~l"test message"ir
+        ~l"test message"wr
+        ~l"test message"dg
+        ~l"test message"eg
+        ~l"test message"ig
+        ~l"test message"wg
+        ~l"test message"dc
+        ~l"test message"ec
+        ~l"test message"ic
+        ~l"test message"wc
+        ~l"test message"dm
+        ~l"test message"em
+        ~l"test message"im
+        ~l"test message"wm
+        ~l"test message"dwm
+        ~l"test message"ewm
+        ~l"test message"iwm
+        ~l"test message"wwm
+        ~l"test message"dry
+        ~l"test message"ery
+        ~l"test message"iry
+        ~l"test message"wry
+        ~l"test message"dwb
+        ~l"test message"ewb
+        ~l"test message"iwb
+        ~l"test message"wwb
+    end
+    ```
+
+  """
   defmacro __using__(_) do
     first = quote do
       require Logger
