@@ -51,6 +51,6 @@ def test_logger do
 end
 ```
 
-![out1](https://github.com/nottewae/logger_sigil_l/blob/master/priv/imgs/screen1.png?raw=true)
-![out2](https://github.com/nottewae/logger_sigil_l/blob/master/priv/imgs/screen2.png?raw=true)
+![out1](https://github.com/nottewae/logger_sigil_l/tree/master/priv/runs/imgs/screen1.png?raw=true)
+![out2](https://github.com/nottewae/logger_sigil_l/tree/master/priv/runs/imgs/screen2.png?raw=true)
 
