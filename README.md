@@ -17,7 +17,7 @@ end
 ```~l"your text here"<<<m>t>b>``` 
 ```elixir
 ~l"text" #default for Logger.debug
-~l"text"i #default gor Logger.info
+~l"text"i #default for Logger.info
 ~l"text"wr # Logger.warn with red text
 ~l"text"iry # Logger.info with red text and yellow background
 ```
