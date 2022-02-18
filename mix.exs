@@ -4,14 +4,14 @@ defmodule LoggerSigilL.MixProject do
   def project do
     [
       app: :logger_sigil_l,
-      version: "0.1.1",
+      version: "0.1.2",
       elixir: "~> 1.0",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       description: description(),
       package: package(),
       name: "LoggerSigilL",
-      source_url: "https://github.com/nottewa/logger_sigil_l"
+      source_url: "https://github.com/nottewae/logger_sigil_l"
     ]
   end
 
