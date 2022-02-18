@@ -8,7 +8,7 @@ defmodule LoggerSigilL do
     ```elixir
     def deps do
       [
-        {:logger_sigil_l,"~> 0.1.1"}
+        {:logger_sigil_l,"~> 0.1.3"}
       ]
     end
     ```
