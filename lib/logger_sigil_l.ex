@@ -72,7 +72,7 @@ defmodule LoggerSigilL do
           background_color = find_key(background_colors, Enum.at(options, 2), :d)
           {fun, text_color, background_color}
         else
-          {@table_fun[:d], nil, nil}
+          {table_fun[:d], nil, nil}
         end
 
 
